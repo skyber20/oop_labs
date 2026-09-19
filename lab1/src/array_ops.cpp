@@ -122,7 +122,7 @@ namespace lab01 {
             mid = left + (right - left) / 2;
 
             if (arr[mid] > target) {
-                right = mid - 1;
+                right = mid;
             } else if (arr[mid] == target) {
                 out_index = mid;
                 return true;
