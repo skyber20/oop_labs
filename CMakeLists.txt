@@ -1,9 +1,6 @@
-cmake_minimum_required(VERSION 4.3)
-project(OOP)
+cmake_minimum_required(VERSION 3.20)
+project(OOP LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 20)
+enable_testing()
 
-add_executable(OOP main.cpp
-        lab1/src/main.cpp
-        lab1/src/array_ops.cpp
-)
+add_subdirectory(lab1)
